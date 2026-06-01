@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Futura Casa | Cardápio Imobiliário V5.5</title>
+<meta name="theme-color" content="#f5efe7">
+<link rel="icon" type="image/png" href="assets/img/image-001-d63b2218650763a6.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap topin">
+    <a class="logo" href="#inicio">
+      <img class="brandMain" src="assets/img/image-002-2bbccd1661190fb9.png" alt="Futura Casa">
+    </a>
+    <nav class="nav">
+      <a href="#lotes" class="active">Lotes</a><a href="#casas">Casas</a><a href="#combos">Combos</a><a href="#adicionais">Adicionais</a><a href="#bandeja">Simulação</a><a href="#atendimento">Atendimento</a>
+    </nav>
+    <a class="btn primary" href="#bandeja">Ver minha escolha</a>
+    <button class="hamb" id="hamb">☰</button>
+  </div>
+  <nav class="mobile" id="mobile">
+    <a href="#lotes">Lotes</a><a href="#casas">Casas</a><a href="#combos">Combos</a><a href="#adicionais">Adicionais</a><a href="#bandeja">Simulação</a><a href="#atendimento">Atendimento</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap hero" id="inicio">
+    <div class="heroGrid">
+      <div>
+        <div class="eyebrow">Novo conceito de compra</div>
+        <h1>Monte sua casa como quem escolhe um cardápio.</h1>
+        <p>Escolha a base da sua vida — o lote. Depois escolha a casa. Se preferir, monte um combo pronto com adicionais, simulação editável e encaminhamento direto para um consultor.</p>
+        <div class="heroActions"><a class="btn primary" href="#lotes">Começar pelos lotes</a><a class="btn ghost" href="#casas">Ver casas</a><a class="btn ghost" href="#combos">Montar combo</a></div>
+      </div>
+      <aside class="trayHero">
+        <div class="eyebrow">Cardápio Futura Casa</div><h3>Escolha em 4 passos</h3>
+        <div class="miniLine"><div><b>1. Base</b><small>Lote / localização / metragem</small></div><span>🌱</span></div>
+        <div class="miniLine"><div><b>2. Prato principal</b><small>Modelo de casa e padrão</small></div><span>🏡</span></div>
+        <div class="miniLine"><div><b>3. Combo</b><small>Lote + casa + plano</small></div><span>✨</span></div>
+        <div class="miniLine"><div><b>4. Adicionais</b><small>Paisagismo, solar, gourmet</small></div><span>➕</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="grid4">
+      <div class="card"><div class="eyebrow">Entrada</div><h3>Somente lote</h3><p class="muted">Trave localização e decida a casa depois.</p></div>
+      <div class="card"><div class="eyebrow">Prato principal</div><h3>Somente casa</h3><p class="muted">Para quem já possui lote ou quer conhecer o custo da construção.</p></div>
+      <div class="card"><div class="eyebrow">Combo</div><h3>Lote + casa</h3><p class="muted">A experiência completa com previsibilidade de desembolso.</p></div>
+      <div class="card"><div class="eyebrow">Flexível</div><h3>Lote agora + casa depois</h3><p class="muted">Compra faseada com casa pré-contratada.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="lotes">
+    <div class="sectionHead">
+      <div><div class="eyebrow">1. Escolha sua base</div><h2>Lotes como entradas do cardápio.</h2><p class="muted">Cada lote tem detalhes, metragem, vocação e simulação própria.</p></div>
+      <div class="modebar"><button class="mode active" data-filter-lot="all">Todos</button><button class="mode" data-filter-lot="Parque das Árvores">Parque das Árvores</button><button class="mode" data-filter-lot="Solaris Residencial Resort">Solaris</button></div>
+    </div>
+    <div class="grid4" id="lotGrid"></div>
+  </section>
+
+  <section class="wrap section" id="casas">
+    <div class="sectionHead">
+      <div><div class="eyebrow">2. Escolha o prato principal</div><h2>Casas com fachada, interior e detalhes.</h2><p class="muted">O comprador pode ver detalhes antes de simular ou montar o combo.</p></div>
+      <div class="modebar"><button class="mode active" data-filter-home="all">Todas</button><button class="mode" data-filter-home="entrada">Entrada</button><button class="mode" data-filter-home="premium">Premium</button><button class="mode" data-filter-home="alto">Alto padrão</button></div>
+    </div>
+    <div class="grid3" id="homeGrid"></div>
+  </section>
+
+  <section class="wrap section" id="combos">
+    <div class="sectionHead"><div><div class="eyebrow">3. Combos sugeridos</div><h2>Combinações prontas para facilitar a decisão.</h2><p class="muted">O empreendimento escolhido em Lotes filtra automaticamente os lotes disponíveis nos combos.</p></div></div>
+    <div class="grid3" id="comboGrid"></div>
+  </section>
+
+  <section class="wrap section" id="adicionais">
+    <div class="sectionHead"><div><div class="eyebrow">4. Adicionais</div><h2>Complete sua experiência.</h2><p class="muted">Itens opcionais para conforto, sustentabilidade e lazer.</p></div></div>
+    <div class="grid3" id="addonGrid"></div>
+  </section>
+
+  <section class="wrap section" id="bandeja">
+    <div class="sectionHead"><div><div class="eyebrow">Simulação editável</div><h2>Minha bandeja e proposta.</h2><p class="muted">Valores, entrada, percentual, pagamento da entrada no cartão em 1, 2 ou 3 parcelas, prazo e sistema podem ser ajustados diretamente.</p></div></div>
+    <div class="grid2">
+      <div class="tray">
+        <h2>Minha escolha</h2><p class="muted">Selecione lote, casa e adicionais. Depois ajuste os campos financeiros.</p>
+        <div class="trayLine"><span>Lote</span><b id="trayLot">Nenhum</b></div>
+        <div class="trayLine"><span>Casa</span><b id="trayHome">Nenhuma</b></div>
+        <div class="trayLine"><span>Adicionais</span><b id="trayAddons">R$ 0</b></div>
+        <div class="total" id="trayTotal">R$ 0</div>
+
+        <div class="fields">
+          <div class="field full"><label>Jornada de compra</label><select id="buyMode"><option value="combo">Lote + casa</option><option value="lot">Somente lote</option><option value="home">Somente casa</option><option value="future">Lote agora + casa pré-contratada</option></select></div>
+          <div class="field"><label>Valor do lote</label><input type="number" id="lotPriceInput"></div>
+          <div class="field"><label>Valor da casa</label><input type="number" id="homePriceInput"></div>
+          <div class="field"><label>Entrada em R$</label><input type="number" id="entryValue"></div>
+          <div class="field"><label>Entrada em %</label><input type="number" id="entryPercent" min="0" max="90" value="20"></div>
+          <div class="field"><label>Parcelamento da entrada</label><select id="entryInstallments"><option value="1">1X no cartão</option><option value="2">2X no cartão</option><option value="3" selected>3X no cartão</option></select></div>
+          <div class="field"><label>Valor da parcela da entrada</label><input type="text" id="entryInstallmentField" value="R$ 0" readonly></div>
+          <div class="field"><label>Prazo</label><select id="term"><option value="120">120 meses</option><option value="180">180 meses</option><option value="240" selected>240 meses</option><option value="360">360 meses</option></select></div>
+          <div class="field"><label>Sistema</label><select id="system"><option value="PRICE">PRICE</option><option value="SAC">SAC</option></select></div>
+        </div>
+
+        <div class="contactBlock">
+          <h3>Seus dados para atendimento</h3>
+          <p>Essas informações serão encaminhadas ao consultor junto com a simulação.</p>
+          <div class="fields">
+            <div class="field"><label>Nome completo</label><input type="text" id="buyerName" placeholder="Ex.: Franco Alves"></div>
+            <div class="field"><label>WhatsApp / telefone</label><input type="tel" id="buyerPhone" placeholder="Ex.: (34) 99999-9999"></div>
+            <div class="field"><label>E-mail</label><input type="email" id="buyerEmail" placeholder="Ex.: nome@email.com"></div>
+            <div class="field"><label>Cidade</label><input type="text" id="buyerCity" placeholder="Ex.: Monte Carmelo, MG"></div>
+            <div class="field"><label>Preferência de contato</label><select id="contactPreference"><option>WhatsApp</option><option>Ligação</option><option>E-mail</option><option>Reunião presencial</option></select></div>
+            <div class="field"><label>Melhor horário</label><select id="contactTime"><option>Manhã</option><option>Tarde</option><option>Noite</option><option>Qualquer horário</option></select></div>
+            <div class="field full"><label>Observação para o consultor</label><textarea id="buyerNote" placeholder="Ex.: Gostaria de avaliar entrada menor, prazo maior ou outro lote."></textarea></div>
+          </div>
+        </div>
+
+        <div class="resultGrid">
+          <div class="res"><small>Entrada total</small><b id="resEntry">R$ 0</b></div>
+          <div class="res"><small>Parcela da entrada</small><b id="resEntryInstallment">3X no cartão de R$ 0</b></div>
+          <div class="res"><small>Financiado</small><b id="resFinanced">R$ 0</b></div>
+          <div class="res"><small>Parcela estimada</small><b id="resPayment">R$ 0</b></div>
+          <div class="res"><small>Entrada em %</small><b id="resRatio">0%</b></div>
+          <div class="res"><small>Sistema</small><b id="resSystem">PRICE</b></div>
+        </div>
+        <div class="actions">
+          <button class="btn primary" id="saveChoice">Salvar proposta</button>
+          <button class="btn primary" id="copyChoice">Copiar resumo</button>
+          <button class="btn primary" id="sendConsultant">Enviar proposta ao consultor</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">Diagnóstico</div><h2 id="diagnosisTitle">Escolha seu lote e sua casa.</h2><p class="muted" id="diagnosisText">A simulação permite ajustar valores, percentual de entrada, pagamento da entrada no cartão de crédito e prazo.</p>
+        <div style="height:18px"></div><div class="note"><b>Importante:</b> a proposta enviada ao consultor inclui a composição da bandeja e os parâmetros da simulação para iniciar a negociação.</div>
+        <div style="height:18px"></div>
+        <div class="aiBox"><div class="thread" id="thread"><div class="msg bot">Olá. Posso ajudar a montar um combo mais adequado para seu momento de compra.</div></div><div class="chatbar"><input id="aiInput" placeholder="Ex.: vale mais comprar só o lote agora?"><button class="btn primary" id="aiSend">Perguntar</button></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="atendimento">
+    <div class="card">
+      <div class="sectionHead">
+        <div><div class="eyebrow">Atendimento</div><h2>Pronto para transformar a escolha em negociação?</h2><p class="muted">Depois de montar a bandeja, envie a proposta para um consultor validar disponibilidade, prazo, fluxo e condições.</p></div>
+        <div class="actions"><button class="btn primary" id="sendConsultantBottom">Enviar proposta ao consultor</button><button class="btn primary" id="openScheduleModal">Agendar apresentação</button></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="detailModal"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const LOTS = [{"id": "par12", "name": "Parque das Árvores • Lote 12", "project": "Parque das Árvores", "area": 300, "dims": "10 x 30 m", "price": 238000, "tag": "entrada inteligente", "taste": "Prático", "details": "Lote com metragem racional, ideal para quem quer iniciar a jornada patrimonial com menor desembolso e boa liquidez futura.", "features": ["300 m²", "Frente funcional", "Vocação residencial", "Boa relação valor/m²"]}, {"id": "par26", "name": "Parque das Árvores • Lote 26", "project": "Parque das Árvores", "area": 347, "dims": "11,5 x 30 m", "price": 279000, "tag": "boa metragem", "taste": "Equilibrado", "details": "Lote intermediário para quem busca equilíbrio entre área, custo de implantação e flexibilidade de projeto.", "features": ["347 m²", "Frente ampliada", "Projeto térreo possível", "Bom equilíbrio"]}, {"id": "sol45", "name": "Solaris • Lote 45", "project": "Solaris Residencial Resort", "area": 360, "dims": "12 x 30 m", "price": 438000, "tag": "resort living", "taste": "Premium", "details": "Base premium para uma casa de presença, conectada ao conceito de lazer, segurança e experiência residencial elevada.", "features": ["360 m²", "12m de frente", "Condomínio resort", "Perfil premium"]}, {"id": "sol81", "name": "Solaris • Lote 81", "project": "Solaris Residencial Resort", "area": 420, "dims": "14 x 30 m", "price": 525000, "tag": "frente ampla", "taste": "Especial", "details": "Lote com frente generosa, indicado para projetos mais autorais, fachadas imponentes e melhor implantação de garagem/lazer.", "features": ["420 m²", "14m de frente", "Mais liberdade arquitetônica", "Alto padrão"]}];
+const HOMES = [{"id": "compacta", "name": "Casa Compacta Smart", "style": "Entrada premium", "tier": "entrada", "area": 124, "rooms": 3, "suites": 1, "price": 490000, "ideal": "primeira casa com padrão superior", "details": "Modelo eficiente, com boa leitura comercial para quem quer entrar na jornada da casa pronta sem carregar um projeto grande demais.", "features": ["124 m²", "3 quartos", "1 suíte", "2 vagas"], "ext": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABagAAAQ+CAIAAAC1Dk/sAABxn2NhQlgAAHGfanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAAcXlqdW1iAAAAR2p1bWRjMm1hABEAEIAAAKoAOJtxA3VybjpjMnBhOjc0ZTUxMjA2LTg3N2QtNGJhNC1iOTUyLTdhMzk4MWU5MTFlNQAAACFVanVtYgAAAClqdW1kYzJhcwARABCAAACqADibcQNjMnBhLmFzc2VydGlvbnMAAAAJ0Wp1bWIAAAA7anVtZEDLDDK7ikidpwsq1vR/Q2kTYzJwYS5pY29uAAAAABhjMnNoA2x28YhbdCr4nTPeuAKKtgAAABdiZmRiAGltYWdlL3N2Zyt4bWwAAAAJd2JpZGI8c3ZnIHdpZHRoPSI3MTYiIGhlaWdodD0iNzE2IiB2aWV3Qm94PSIwIDAgNzE2IDcxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUwOC43NDkgMzE3LjM5OUM1MTYuNzc3IDI4Ny4zMTQgNTA4Ljk5MSAyNTMuODg0IDQ4NS4zODkgMjMwLjI4MkM0NjEuNzg4IDIwNi42ODEgNDI4LjM2IDE5OC44OTUgMzk4LjI3MyAyMDYuOTIzQzM3Ni4yMzEgMTg0LjkyOCAzNDMuMzkgMTc0Ljk1NiAzMTEuMTQ4IDE4My41OTZDMjc4LjkwNiAxOTIuMjM0IDI1NS40NSAyMTcuMjkyIDI0Ny4zNiAyNDcuMzYxQzIxNy4yOTEgMjU1LjQ1MSAxOTIuMjMzIDI3OC45MSAxODMuNTk1IDMxMS4xNDlDMTc0Ljk1NyAzNDMuMzkxIDE4NC45MjcgMzc2LjIzMiAyMDYuOTI0IDM5OC4yNzRDMTk4Ljg5NiA0MjguMzU5IDIwNi42ODMgNDYxLjc4OSAyMzAuMjg0IDQ4NS4zOTFDMjUzLjg4NSA1MDguOTkyIDI4Ny4zMTMgNTE2Ljc3OSAzMTcuNDAxIDUwOC43NUMzMzkuNDQyIDUzMC43NDUgMzcyLjI4NiA1NDAuNzE3IDQwNC41MjUgNTMyLjA3OUM0MzYuNzY3IDUyMy40NDEgNDYwLjIyMyA0OTguMzg0IDQ2OC4zMTMgNDY4LjMxNUM0OTguMzgzIDQ2MC4yMjQgNTIzLjQ0IDQzNi43NjYgNTMyLjA3OCA0MDQuNTI2QzU0MC43MTYgMzcyLjI4NSA1MzAuNzQ3IDMzOS40NDMgNTA4Ljc0OSAzMTcuNDAyVjMxNy4zOTlaTTQ3MC44OTkgMjQ0Ljc3NkM0ODYuODkyIDI2MC43NyA0OTMuNDg4IDI4Mi42MDEgNDkwLjY4NyAzMDMuNDEyTDQxNS41NzcgMjYwLjA0NkM0MTIuNDExIDI1OC4yMTggNDA4LjUwOSAyNTguMjE4IDQwNS4zNDUgMjYwLjA0NkwzMTcuNDAxIDMxMC44MlYyNzcuNTI2QzMxNy40MDEgMjc1LjE5MSAzMTguNjUyIDI3My4wMDUgMzIwLjY3NiAyNzEuODM3TDM4Ny42NDQgMjMzLjE3NEM0MTQuMTc4IDIxOC4zNTMgNDQ4LjM0NiAyMjIuMjIzIDQ3MC45MDEgMjQ0Ljc3Nkg0NzAuODk5Wk0zNTcuODM3IDMxMS4xNDRMMzk4LjI3NSAzMzQuNDkxVjM4MS4xODVMMzU3LjgzNyA0MDQuNTMyTDMxNy4zOTggMzgxLjE4NVYzMzQuNDkxTDM1Ny44MzcgMzExLjE0NFpNMjY0Ljc3NiAyNjkuNjkzQzI2NS4yMDcgMjM5LjMwNSAyODUuNjQ0IDIxMS42NDkgMzE2LjQ1MyAyMDMuMzkzQzMzOC4zIDE5Ny41NCAzNjAuNTA1IDIwMi43NDQgMzc3LjEyNyAyMTUuNTczTDMwMi4wMTQgMjU4LjkzN0MyOTguODQ4IDI2MC43NjQgMjk2Ljg5OCAyNjQuMTQ0IDI5Ni44OTggMjY3Ljc5OFYzNjkuMzQ2TDI2OC4wNjUgMzUyLjY5OUMyNjYuMDQzIDM1MS41MzEgMjY0Ljc3NiAzNDkuMzUzIDI2NC43NzYgMzQ3LjAxN1YyNjkuNjkxVjI2OS42OTNaTTIwMy4zOTEgMzE2LjQ1NEMyMDkuMjQ0IDI5NC42MDggMjI0Ljg1NCAyNzcuOTc4IDI0NC4yNzYgMjY5Ljk5OVYzNTYuNzNDMjQ0LjI3NiAzNjAuMzg0IDI0Ni4yMjYgMzYzLjc2MyAyNDkuMzkyIDM2NS41OTFMMzM3LjMzNyA0MTYuMzY1TDMwOC41MDMgNDMzLjAxM0MzMDYuNDgxIDQzNC4xODEgMzAzLjk2MSA0MzQuMTg4IDMwMS45MzkgNDMzLjAyTDIzNC45NzEgMzk0LjM1N0MyMDguODY4IDM3OC43ODkgMTk1LjEzOCAzNDcuMjYxIDIwMy4zOTEgMzE2LjQ1NFpNMjQ0Ljc3NSA0NzAuOUMyMjguNzgxIDQ1NC45MDYgMjIyLjE4NiA0MzMuMDc1IDIyNC45ODYgNDEyLjI2NEwzMDAuMDk2IDQ1NS42M0MzMDMuMjYzIDQ1Ny40NTcgMzA3LjE2NCA0NTcuNDU3IDMxMC4zMjggNDU1LjYzTDM5OC4yNzMgNDA0Ljg1NlY0MzguMTQ5QzM5OC4yNzMgNDQwLjQ4NSAzOTcuMDIyIDQ0Mi42NzEgMzk0Ljk5NyA0NDMuODM5TDMyOC4wMjkgNDgyLjUwMkMzMDEuNDk1IDQ5Ny4zMjIgMjY3LjMyNyA0OTMuNDUyIDI0NC43NzIgNDcwLjlIMjQ0Ljc3NVpNNDUwLjg5NyA0NDUuOTgyQzQ1MC40NjYgNDc2LjM3MSA0MzAuMDI5IDUwNC4wMjcgMzk5LjIyIDUxMi4yODNDMzc3LjM3MyA1MTguMTM2IDM1NS4xNjggNTEyLjkzMiAzMzguNTQ3IDUwMC4xMDJMNDEzLjY1OSA0NTYuNzM4QzQxNi44MjYgNDU0LjkxMSA0MTguNzc1IDQ1MS41MzIgNDE4Ljc3NSA0NDcuODc3VjM0Ni4zMjlMNDQ3LjYwOSAzNjIuOTc3QzQ0OS42MzEgMzY0LjE0NSA0NTAuODk3IDM2Ni4zMjMgNDUwLjg5NyAzNjguNjU5VjQ0NS45ODVWNDQ1Ljk4MlpNNTEyLjI4MiAzOTkuMjIxQzUwNi40MjkgNDIxLjA2OCA0OTAuODE5IDQzNy42OTcgNDcxLjM5NyA0NDUuNjc2VjM1OC45NDZDNDcxLjM5NyAzNTUuMjkyIDQ2OS40NDggMzUxLjkxMiA0NjYuMjgxIDM1MC4wODVMMzc4LjMzNiAyOTkuMzExTDQwNy4xNyAyODIuNjYzQzQwOS4xOTIgMjgxLjQ5NSA0MTEuNzEyIDI4MS40ODcgNDEzLjczNCAyODIuNjU1TDQ4MC43MDIgMzIxLjMxOEM1MDYuODA1IDMzNi44ODcgNTIwLjUzNiAzNjguNDE1IDUxMi4yODIgMzk5LjIyMVoiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgoAAAF+anVtYgAAAEFqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmFjdGlvbnMudjIAAAAAGGMyc2j7VuevmSdcba125l8F1orrAAABNWNib3KhZ2FjdGlvbnODpGZhY3Rpb25sYzJwYS5jcmVhdGVkZHdoZW7AdDIwMjYtMDUtMjlUMDA6MDA6MDBabXNvZnR3YXJlQWdlbnSiZG5hbWVpZ3B0LWltYWdlZ3ZlcnNpb25jMi4wcWRpZ2l0YWxTb3VyY2VUeXBleEZodHRwOi8vY3YuaXB0Yy5vcmcvbmV3c2NvZGVzL2RpZ2l0YWxzb3VyY2V0eXBlL3RyYWluZWRBbGdvcml0aG1pY01lZGlhomZhY3Rpb25uYzJwYS5jb252ZXJ0ZWRkd2hlbsB0MjAyNi0wNS0yOVQwMDowMDowMFqiZmFjdGlvbngYYzJwYS53YXRlcm1hcmtlZC51bmJvdW5kZHdoZW7AdDIwMjYtMDUtMjlUMDA6MDA6MDBaAAAVEmp1bWIAAABJanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5jZXJ0aWZpY2F0ZS1zdGF0dXMAAAAAGGMyc2gNn+WQ1cunaDoJMvqw38gSAAAUwWNib3KhaG9jc3BWYWxzgnkKdE1JSUgwd29CQUtDQ0I4d3dnZ2ZJQmdrckJnRUZCUWN3QVFFRWdnZTVNSUlIdFRDQjZhSVdCQlFjKzFlaXdCdEx4cmVlaTFWMWVqMVVmbVJEWFJnUE1qQXlOakExTWpneU1UVTJNVGxhTUlHWU1JR1ZNRWt3Q1FZRkt3NERBaG9GQUFRVTM0STNVMTVUMkRPeDRBUTlKRFh4ZGViaENoa0VGRGs5RUVmY2w0K3ZpSHROY3hnZHplWHVwS1VxQWhBTHBmenBEbkNNOGdXQU1lNUVIR1J6Z0FBWUR6SXdNall3TlRJNE1qRTFOakU1V3FBUkdBOHlNREkyTURZd05ESXhOVFl4T0ZxaElqQWdNQjRHQ1NzR0FRVUZCekFCQmdRUkdBOHlNREUyTURVek1ESXhOVFl4T1ZxaEl6QWhNQjhHQ1NzR0FRVUZCekFCQWdRU0JCQ0d1RFUrQnZKbnNHcFNsV1RYdWtKMk1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQmdRQ05QQzB6NzBoenFhYWJJNFRUMW40Zmk4MXJGejRLV2ZWdm0yZ0dmYkxydmhpRTNOdUxhb0FGVjJJRHVZNkFNa1NlMkpvSC9uQ1A4TXVseGlTNUVvWUR2WFNpQ0NlS29mNk56OHJFeTAvQ1RQWll4Um41N3pSMm5JdDR0KzlRbE5ZYkdaeXd1ZExWNmNZR290TFhPYmJSdzBNblNEbHZXNzN3VnV4SEhyMFlSSGdsSW5XTXBTZTlFOTlzaVRRaWhVb2RRcDZQclNaNGxuTEw5QmdYaGdhcnRwLzBHUEVtdFZtL2hYdkptT1BpVTJ3VjRucC85RStycTZiTFY1R0tTTkNONlNnTTdhbGJCb0lmZUwxelZkRzY1VzBpbE9UdkZMQlFIcFc0SHNBT1VQbkw3NDZHcm1BRitlbzIyTDh3ODFGWkVrVlVzQzJiem9YMTd6cy9RU2J0NHFsM055T2dySjNJbDFCRVhETlZPNWNjOWI3S2UrZlV3NzFhQnhYMktUZWpmL3p3TzM3QnBsOW9WY2dKL2pmWkNnTVJvQ0FlTUNGQ3FsZUNBa2RvK1dwc3dUYmh4anpRY0xLaStIWURqU2NISS9ZbXY5RmNsRGp2Q1BRd1BGNG43dFdyRWdIbi8yNDRqMUZ2a0lGNGQ2ZXZpbEU3Z01HSldEUVJFa3BKMXB5Z2dnVXhNSUlGTFRDQ0JTa3dnZ01Sb0FNQ0FRSUNFR055NnZkY0hFMnhKNlZmZDkyZmRoc3dEUVlKS29aSWh2Y05BUUVMQlFBd1NqRWhNQjhHQTFVRUF3d1lVMU5NTG1OdmJTQkRNbEJCSUVsRFFTQlNNU0F5TURJMU1SZ3dGZ1lEVlFRS0RBOVRVMHdnUTI5eWNHOXlZWFJwYjI0eEN6QUpCZ05WQkFZVEFsVlRNQjRYRFRJMk1ERXdNakl4TVRFMU5Wb1hEVEkzTURFd01qSXhNVEUxTkZvd1RURUxNQWtHQTFVRUJoTUNWVk14RVRBUEJnTlZCQW9NQ0ZOVGJDQkRiM0p3TVNzd0tRWURWUVFERENKVFUwd3VZMjl0SUVNeVVFRWdTVU5CSUZJeElFOURVMUFnVW1WemNHOXVaR1Z5TUlJQm9qQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FZOEFNSUlCaWdLQ0FZRUF6NEp2aXlOdDJhcVBaRTMyR0Y3LzRLcHhzcXlPSExMY3BhWEllR1FxbjVvMXJGZXJLSGJEMmx3SG5pYXlGTUxoYUVGMFVTQ1JTZUFZRXNnWThNWFYyM1Qwd2RSemZuZ1VQV2ZvSVR0b09pWW5IYVRrNllpbm50dFpZMGUvSnpmcVBnc1BUaUg4c3NMdnNpS0VZZmYzS3VPdDZRa1VJQ1pYWVdUemFvQ3NmbVU2cm5QZFROMm9hUmM3eFhkWTZkU3R5UFVGbnpTU1Q5MFZFcFIra0UySW9BSlBUNVQzMUhZbkdhWVlwdGpUb3lydDYyRGplVllKQVI5SmxLVmdjOHZDYkVIenozcDVsSzBSOVArUmVPZlRzMXR3Mi9LT2dkd0xpc3hINHFKS3ZCSU11cVZTVldWWlBhZUhnL1Y2dzFMOHpuWDA2SG5Fa1ZyMGM1VExkQnIrZllPTm55QWg5VWYrUTF2UERGNHRybnI2WFFMVVdjMnI1NmxMMk5VWmx3d3MwV01ZdmVvNkhOdjRWMThwV3RMTnJtUlFuc1AwZ0NMVGlxMml1NHR4bmVHNEpiUmVVblhsK3B3c0p3aTF3a3hjTzFETnJLMmdHRUtlZUpMZFpEc3RQclphT3BTSGNJMmFNeXZYN2dwUU15ekY0MjZ3a0Fvb2EzRmR4OVo1NE9ZbkFnTUJBQUdqZ1ljd2dZUXdEQVlEVlIwVEFRSC9CQUl3QURBZkJnTlZIU01FR0RBV2dCUTVQUkJIM0plUHI0aDdUWE1ZSGMzbDdxU2xLakFQQmdrckJnRUZCUWN3QVFVRUFnVUFNQk1HQTFVZEpRUU1NQW9HQ0NzR0FRVUZCd01KTUIwR0ExVWREZ1FXQkJRYysxZWl3QnRMeHJlZWkxVjFlajFVZm1SRFhUQU9CZ05WSFE4QkFmOEVCQU1DQjRBd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dJQkFESGx0V3QvZGh2WHd0c3FmZWtmajY3Y215L3YzaDdtZ1hqbk5hYWhVbHNNYm10Y2kzUnBHU29BZ00yV2lPR0diYm5YVnFDVHFXOGludFJXVkNtVTJyOHlMTUtNNmlSVVh6UXExMU5td3I5SDl2L3NuWWRSbmpSQkQ4dGtEMEY0ZmpHc05oeUhUSFVieHBNWnhyUk5BZTBhaC9HQU5mdFFCNC9IVDFvViszRUp2cHBqL3N1SGZvWWhsajhLZ2N4WGgvQlVKbmJkcUtYc2NhMGRsd1E2TjVubzBhWFNJY0NUby90djNrbGsvZG0xV3JBc09yOC92bEtpR0NuVTdiQXVpaXdiU2lNeCtxZXdocmFJbGJEYWtEeDcwbVpCTEs1cUZVdks5MU1DUHBpOWZMTEV0ZWtITkw4VUs1WkpLNmxDTWQ4Vndza3RucFc5RG1XNitYc3llMWpCOGF0V0ppbFFlRHMzQ29RcVFvZmhidlBmZkxzTElGSmZnMzFFbmRqRnNrcTE1Um5RZ01NRThkbkhBWmdnWlpyL2tVZnlyY3Q1VDE5SlFXWEN2QXhQcTFkMGpWdkgySWtZaTZZTjRCcStPWkptejdQNG5OdHltOXdJcU9COC95RE5na1hqUzQ3eFFkaitxWVBTZ3B5U2FYMHVWbkJwaThtNDlITHQrUDBlNnp2TXlPcTFVazhJcVNPVFpTNkJXOTZUQWNVZDJGZVBRTWNpR2xEak9YcUgrc1RCL0NGTGh2eCt2NUxjVDRaamlnVzlYa05FaEZjeUFlRHVpTis0UWhoVHAzclg1UGpaV21tVm55L0V6TWR4R0U3WWo2MVhYUnR0bSt4ODBlOUFFSzd3UXVpejA4a3l4Rk1XYVRuSE51N3luRVQ4UGNMbkF2bm4ybmxreHhVVXkKNE1JSUhvd29CQUtDQ0I1d3dnZ2VZQmdrckJnRUZCUWN3QVFFRWdnZUpNSUlIaFRDQng2SVdCQlRNdmhUNTlQTmc5K2dXb2d3ZGpOV25rSE5YNFJnUE1qQXlOakExTWpneU1UVTJNakJhTUhjd2RUQk5NQWtHQlNzT0F3SWFCUUFFRkthaUt0REhIckRSY0dvUGQ4Vnp5YU1yMTNGb0JCVDhLa3AxT29ENm1XT1Q4SE5YN0w2VHNIM0Rld0lVSnl0anlNd2RUUzJiaEZGeWJQU2NYakpScnQ2QUFCZ1BNakF5TmpBMU1qZ3lNVFUyTWpCYW9CRVlEekl3TWpZd05qQTBNakUxTmpFNVdxRWpNQ0V3SHdZSkt3WUJCUVVITUFFQ0JCSUVFUDBQNEdLYzFpN3lxNkc4bmxHVkFkUXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnR0JBSC9majlGR00vL1VGUzN0Sm9sRTdVNFpQODRPczZlem4xL3FuU1BsMVFVa3VYN2xVMm1HOUhNVENmWDdCR0xrQWFEZ1REczFqaWhvYzJNZk9nVFFaZnJ6QkowNlUrQkp3QUJQWG4wUHF1dEhBU2ZZd2RwNXZBZjc2a2IwZHdEVWFUMlliaitDMHh0bTVyeHlCT0JJUFluYUJKSjRQbkd1Y1JkNVhYT3k5MGhQc3Z2a25STjFJaEdTNVc2WDN5MCtLT0h0T25OeGxFQ0l6MGgwZW56N3VXYldmNDN1c1pTeWN1ZlNEUWhTQ0hPc2QzUDlRSklTRzhBUHJtMEJTblFKUzM4TTg5ZnNlRzQ2OGNkQ0Rmb3JZMTlCelRhVGlkWHFMaUtFdkZBc3JrK1ZMQUIrdkpWK2tHNXJPdWNyWWpGU094TlU0VXNmQzRZWW5XK1JuZHlFclNTS2REVmg1MWVyR09wVGZoYmVibzNDemRraWxsRnRxdEZDbm04QThOcUxzTEF0c1lySEJRNnl1Rk91WnFneC9qTm9DQ0VTZm84MzhHbGdGZzVvK3pTWDlnYXhIWjBncmRDRkxqeXRzTmN4Ry9kZWR5NFpxK1o4Q2twQkxVL1J4ZTkyVFRzb1AzdzRiekJyYXBvdEZFaG9mYlB1OVpvdXY3SGdCWEZqQmF6UWVhQ0NCU013Z2dVZk1JSUZHekNDQXdPZ0F3SUJBZ0lRWGZqNzJsa1U4YWFkR0M4aGRGTkpxekFOQmdrcWhraUc5dzBCQVFzRkFEQlBNU1l3SkFZRFZRUUREQjFUVTB3dVkyOXRJRU15VUVFZ1VsTkJJRkp2YjNRZ1EwRWdNakF5TlRFWU1CWUdBMVVFQ2d3UFUxTk1JRU52Y25CdmNtRjBhVzl1TVFzd0NRWURWUVFHRXdKVlV6QWVGdzB5TmpBME1UWXhOREl6TVROYUZ3MHlOekEwTVRZeE5ESXpNVEphTUVveEN6QUpCZ05WQkFZVEFsVlRNUkV3RHdZRFZRUUtEQWhUVTB3Z1EyOXljREVvTUNZR0ExVUVBd3dmVTFOTUxtTnZiUzFETWxCQkxWSnZiM1F0TWpBeU5TMVNVMEVnTFNCaU16Q0NBYUl3RFFZSktvWklodmNOQVFFQkJRQURnZ0dQQURDQ0FZb0NnZ0dCQU1ENlBYRWxTMk5mek01R09MYUYzNEJHUTExb0tsazNwTlBYRjZTRWN3eURoRzJyaDdDeG1xM0k5ejVvanA5TitSc0pMeExDUks4M2o3VzZJRHJJZTRjYU9BbURVYXFaTHhHU1B1UUJ4WENsRnN3YUhkMXQxV2hzdFkyVUxuZTlhTXkzeVh1ZmdwWE4zc0lwb1l5Yk5vVUJkR1VBcTNINm5tbFUrbUl1eVJndjd0TTNrcjRkUGc2eElHTzhWQ1A3a29QUXcweXlxVEJnR2h2V2w3TTV1OFdzVldyYWphOEU3SEhhcEc0eVdJcnUvUTJLYjR4OFdKdkJIMU9YQ3VPS1VCS3V6elpTQnVSdExRV0QrME1OY0ZYMWIvWGM1dk51cmZ5UjM3Zko1MFBWdnFMdTlTaDFOcWpqNDZGMG5ZdjNuZDd1aExuUmJZb0lxN0FtN3ZKSlhmYjVoL2ZwUVBSb040MVVWQ29DYllDSWZVL3ZPNFYvU01CNDI4YWoyTzgzWUxURDFOTlpzRzRhZ25sdjNjbHowektTdGN1MEtaeFBhV3Y4NDRaWXduTWpPQTlKTnJNVndPUVJUeHR1eU13QURsSmZFUWppMjMrdEZpOEc3VEJqaWFiOXpya2FwTVl5SklIdG1VQ3FTYWNqclV5cmc4dGYzUTk4ak0wblUyUEpsd0lEQVFBQm8zZ3dkakFmQmdOVkhTTUVHREFXZ0JUOEtrcDFPb0Q2bVdPVDhITlg3TDZUc0gzRGV6QVBCZ2tyQmdFRkJRY3dBUVVFQWdVQU1CTUdBMVVkSlFRTU1Bb0dDQ3NHQVFVRkJ3TUpNQjBHQTFVZERnUVdCQlRNdmhUNTlQTmc5K2dXb2d3ZGpOV25rSE5YNFRBT0JnTlZIUThCQWY4RUJBTUNCNEF3RFFZSktvWklodmNOQVFFTEJRQURnZ0lCQUdReWIvcDhKb09KVzdZVExtaHRUdDJyT3pNZ2xMYnFBcWN1eGFlcnhzbDhkOGNpU3lTV2FzU3BtK21YRTNVcHNiL1Q4RUkrQyt0a1ZLNFlleUlXVDh3T1VzL3FlWWgvVVA3UjBiRzhRUzIrSmZTNHlsT3pEMVFXcDNLcElhZzlNeURUY3AyK3VXSm9oWjFucVR1ZGhqNVZTVFJKYVpCQ2JQUmJQT21hbFl3czE0b0pmU0dXcmd1eitkcG5UZnhQbjhyL0hoTGVZRHNCN1p1NGs1VWIxb1p2ZElmZ2h2enpMMHFyVGN2c3RVS3hTSjlTd3EyS3ZIelVtank2K3VGS2hzenRCTjhrSE1ZRGV3M3ZFWHJNMThKbVRZejJMRjdYa2JqWVJWZXVLWVlZaDYwL2NWWnRhQUJVR2h6Zk5WV2FxQWU4STB2K2ZuQkFwbzE0NUZFODVpMUU5U205UzREcm1qdUJFNTBCeVZtOEVMWXpwVEdWQTcvVHZaMlpXTUhwUmhZbVE5TFluT21BZ1lQOWtmQXdnaVdlbmZxZ0k5R2VqQ0xMSmZIK2NOZzZCZ0J2RGpaYVgzWk0xVjZMSzM2eEVob1lhckUzTDcxOUlzV3NSbGg1cVEvaFlvNkhJbi82LzR2YmdIVG9pL3h2Z1RUbDNhVjhNN282ODZnV2sxcXA5Wkd1cVNweGovdFlkWFI1b1dxT2ZjVVA0RnVCYjNxdllsdkVrTElaUVFZMkp0UHRWZHdsVFg5RU1OdkNaV253dVByZ1lKNzEvWFlWeWRaS2ZWZzRMaTZmc1BRWDM4dkNHRzhiN2VlYTFVMmNQRUJHQktHUkpObU85VjQ1aktiQjlBdFdkYU80b2x1eDV6RHVqQW9JZkd0YlJRbTNFbktuckRiMWRlcnBvT1B1AAAAw2p1bWIAAABAanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5oYXNoLmRhdGEAAAAAGGMyc2giwp3OcCw7Z8fMf+/D0SFDAAAAe2Nib3KlamV4Y2x1c2lvbnOBomVzdGFydBghZmxlbmd0aBlxq2RuYW1lbmp1bWJmIG1hbmlmZXN0Y2FsZ2ZzaGEyNTZkaGFzaFggyoOm4cTYTcSxuk3GGFT+ZnCrNatbjQGtkoKu8ATlCuRjcGFkSAAAAAAAAAAAAAADGmp1bWIAAAAnanVtZGMyY2wAEQAQgAAAqgA4m3EDYzJwYS5jbGFpbS52MgAAAALrY2JvcqZqaW5zdGFuY2VJRHgseG1wOmlpZDpkMDU5ZWFmZi1iZGY0LTQxZGEtYjBkMS04ZWVlOWY1NzBkOTd0Y2xhaW1fZ2VuZXJhdG9yX2luZm+kZG5hbWV4GE9wZW5BSSBNZWRpYSBTZXJ2aWNlIEFQSWRpY29uomN1cmx4JHNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaWNvbmRoYXNoWCA28ee36ihR5pRPLdInFkyvc2xRQh3t3ThbEcn3ka4Y23dvcmcuY29udGVudGF1dGguYzJwYV9yc2YwLjc5LjJrc3BlY1ZlcnNpb25lMi4yLjBpc2lnbmF0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<script src="assets/js/app.js" defer></script>
