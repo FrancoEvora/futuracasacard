@@ -1,0 +1,1 @@
+Versão v6.6: cards clicáveis, imagens para lotes e textos de simulação ajustados para “Simular valor”.
